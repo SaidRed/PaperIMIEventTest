@@ -1,8 +1,0 @@
-name: SpigotTestPlugin
-version: '1.0-SNAPSHOT'
-main: com.github.saidred.spigotTestPlugin.SpigotTestPlugin
-api-version: '1.21'
-
-commands:
-  test:
-    usage: /test \\\\\
