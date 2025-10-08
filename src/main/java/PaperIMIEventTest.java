@@ -47,9 +47,7 @@ public final class PaperIMIEventTest extends JavaPlugin {
       // 移動するアイテムのクローン
       ItemStack moveItem = event.getItem().clone();
 
-      // 移動するInventoryに 最大スタック + moveItem 以上のアイテムがある場合は処理しない
-      //int i = moveItem.getMaxStackSize() + moveItem.getAmount();
-      //if (eventSource.containsAtLeast(moveItem, i)) return;
+      // 移動するInventoryに 最大スタック 以上のアイテムがある場合は処理しない
       int i = moveItem.getMaxStackSize();
       getLogger().info("moveEvent:CheckStackAmount" + i);
 
